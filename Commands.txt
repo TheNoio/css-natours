@@ -1,0 +1,2 @@
+Live server con refresh + ignorando node_modules:   live-server --ignore=node_modules .   
+Compilacion de scss a css:  npm run compile:sass
