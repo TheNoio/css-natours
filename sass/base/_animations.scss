@@ -49,3 +49,18 @@
         transform: rotate(5deg);
     }
 }
+
+@keyframes ballBounce {
+    
+    25%{
+        transform: translateY(-3rem);
+    }
+
+    50%{
+        transform: translateY(2.5rem);
+    }
+
+    75%{
+        transform: translateY(2.5rem) scale(1.2, 0.8);
+    }
+}
