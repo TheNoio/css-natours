@@ -38,29 +38,67 @@
 
 @keyframes wiggle {
     25% {
-        transform:rotate(5deg)
+        transform: rotate(5deg)
     }
 
     50% {
         transform: rotate(-5deg)
     }
 
-    75%{
+    75% {
         transform: rotate(5deg);
     }
 }
 
 @keyframes ballBounce {
-    
-    25%{
+
+    25% {
         transform: translateY(-3rem);
     }
 
-    50%{
+    50% {
         transform: translateY(2.5rem);
     }
 
-    75%{
+    75% {
         transform: translateY(2.5rem) scale(1.2, 0.8);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes stretch-squish {
+    40% {
+        transform: scale(1.5, 0.9);
+    }
+
+    90% {
+        transform: scale(0.8, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes heartbeat {
+    25%{
+        transform: scale(1.2, 1.2);
+    }
+
+    30%{
+        transform: scale(1, 1);
+    }
+
+    55%{
+        transform: scale(1.1, 1.1);
+    }
+
+    60%{
+        transform: scale(1, 1);
     }
 }
