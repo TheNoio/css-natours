@@ -28,6 +28,7 @@
     }
 
     &__icon-2 {
+        transform-origin: 50% 45%;
         &:active {
             animation: spin 0.7s infinite;
             animation-timing-function: linear;
