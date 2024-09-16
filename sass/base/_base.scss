@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 *::after *::before {
     margin: 0;
     padding: 0;
@@ -10,10 +11,27 @@
 }
 
 html {
-    /* 62.5% porque la font size default de los browsers es 16 entonces (.625*16 = 10 = 10px) */
+    /* 62.5% porque la font size default de los browsers es 16 entonces (.625*16 = 10 = 10px) para que 1rem sea 10px*/
     font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
