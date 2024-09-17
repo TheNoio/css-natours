@@ -4,11 +4,14 @@
   "description": "Landing for natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "serve": "concurrently \"npm run compile:sass\" \"npx live-server --ignore=node_modules .\""
   },
   "author": "Naio",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^9.0.1",
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0"
   },
   "dependencies": {
